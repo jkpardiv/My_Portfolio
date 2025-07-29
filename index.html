@@ -6,48 +6,116 @@
 </head>
 <body>
     <div class="container">
+        <div class="navigation">
+            <nav>
+            <ul class="list0">
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skill">My Skills</a></li>
+                <li><a href="#Projects">My Projects</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+        </nav>
+        </div>        
         <div class="head">
             <header>
                 <h1 id="kl">Hello, Glad to see you</h1>
                 <h2>Welcome to my portfolio</h2>
-                <img class="welcome" src="welcome.jpg" alt="welcome">
+                <img class="welcome" src="./images/welcome.jpg" alt="welcome">
             </header>
         </div>
-        
-        <!-- <div class="nav-bar">
-           <nav id="details">
-                <a href="index.html">Home</a>
-                <a href="about.html">About Me</a>
-                <a href="contact.html">Contact Me</a>
-           </nav>
-        </div> -->
         <div class="about">
-            <h3>Know More About Me</h3>
+            <section id="about">
+                <h3>Know More About Me</h3>
             <div class="image">
-                 <img class="self" src="passport_photo.jpg" alt="my_photo">
+                 <img class="self" src="./images/passport_photo.jpg" alt="my_photo">
             </div>
             <p>
                 Entry-level Computer Science graduate with practical experience in full-stack development using Java, Spring Boot, React, and SQL. Familiar with Python and foundational AI/ML concepts. Skilled in debugging, documentation, and collaborating in team and hybrid work environments. Quick learner with a strong problem-solving mindset and a passion for building scalable software solutions.
             </p>
-        </div> 
-        <div class="skills"> 
+            </section>
+         </div> 
+        
+       
+        <div class="skills-section"> 
+            <section id="skill">
             <h3>My Skills</h3>
-            <ul>
-                <li>Java</li>
-                <li>SpringBoot</li>
-                <li>SQL</li>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>React</li>
-            </ul>
+            
+                <div class="java skill">Java</div>
+                <div class="springBoot skill">SpringBoot</div>
+                <div class="git skill">Git</div>
+                <div class="python skill">Python</div>
+                <div class="sql skill">SQL</div>
+                <div class="html skill">HTML</div>
+                <div class="css skill">CSS</div>
+                <div class="react skill">React</div>
+            
+            </section>    
         </div>
-        <div class="contact">
-            <p>Phone: <span id="phone">(+91) 9381714017</span></p>
-            <p>Email: <span id="email">jkpardiv@gmail.com</span></p>
-            Your name: <input type="text" placeholder="Enter your name"><br><br>
-            <textarea id="message"></textarea><br><br>
-            <button type="submit">Send a Message</button>
-         </div>
+        <section id="Projects">
+            <div class="overview">
+            
+                <div class="p1 card">
+                <div class="left">
+                    <h2>Employee Management Website</h2>
+                    <a href="./projects.html">Details↗</a>
+                </div>
+                <div class="right">
+                    <img src="./images/employee.png" alt="employee">
+                </div>
+            </div>
+
+            <div class="p2 card">
+                <div class="left">
+                    <h2>Voice-Controlled Chess Game</h2>
+                    <a href="./projects.html">Details↗</a>
+                </div>
+                <div class="right">
+                    <img src="./images/krish.png" alt="chess">
+                </div>
+            </div>
+
+                <div class="p2 card">
+                    <div class="left">
+                        <h2>Quiz Competition Website</h2>
+                        <a href="./projects.html">Details↗</a>
+                    </div>
+                    <div class="right">
+                        <img src="./images/quiz.png" alt="quiz">
+                    </div>
+                </div>
+            </div>
+        </section>
+            
+        
+
+        <!-- <div class="projects">
+            <a href="./projects.html"><button type="submit" class="pro-button" >👉Check out My Projects Here</button></a>
+        </div> -->
+        <section id="contact">
+            <div class="contact">
+            
+                <div class="query">
+                    <input type="text" placeholder="Enter your name"><br><br>
+                    <input type="email" placeholder="Enter your email"><br><br>
+                    <textarea id="message" placeholder="Enter Your Message"></textarea><br><br>
+                    <button type="submit">Send a Message</button>
+                </div>
+            
+                <div class="social-media">
+                    <a href="mail">Gmail</a>
+                    <a href="whatsapp">Whatsapp</a>
+                    <a href="phone">Phone</a>
+                </div>
+                <div class="platforms">
+                    <a href="https://www.github.com/jkpardiv">Github</a>
+                    <a href="https://www.leetcode.com/u/jkpardiv">LeetCode</a>
+                </div>
+            </div>
+        </section>
+            <!-- <h1>Get in touch</h1> -->
+            
+         
     </div>
+    
 </body>
 </html>
