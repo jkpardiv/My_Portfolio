@@ -2,17 +2,28 @@
     display: grid;
 }
 body{
-    background-color: #001f3f;
-     font-family: Arial, Helvetica, sans-serif;
+    background-color:rgba(0, 0, 0, 0.856);
+     font-family: 'Montserrat', Helvetica, sans-serif;
+     color: white;
+     
+}
+a{
+    text-decoration: none;
 }
 header{
-    color: white;
+    text-align: center;
+}
+#about-head{
     text-align: center;
 }
 .about{
-    background-color: #f8f9fa;
+    display: flex;
+    justify-content: center;
 }
-
+.ab{
+    border: 2px solid white;
+    border-radius: 8px;
+}
 .welcome{
     width: 35%;
     height: 160px;
@@ -55,7 +66,7 @@ li{
     display: flex;
     justify-content: space-between;
     background-color: #001f3f;
-    color: #f8f9fa;
+    
     padding: 20px;
 }
 .contact button{
@@ -65,8 +76,8 @@ li{
 }
 
 
-h3{
-    color: #001f3f;
+#skill-head {
+    color:aqua;
     text-align: center;
 }
 .projects{
@@ -78,11 +89,7 @@ h3{
     color: blue;
     cursor: pointer;
 }
-.container1{
-    background-color: black;
-    
-    color: white;
-} 
+
 .pr{
     line-height: 20px;
 }
@@ -94,7 +101,6 @@ h3{
     padding: 20px;
     flex-direction: column;
     align-items: center;
-    background-color: #f8f9fa;
 }
 .left a{
     font-size: 20px;
@@ -104,18 +110,17 @@ h3{
     width: 200px;
     height: 200px;
     /* overflow: hidden; */
-    object-fit:fill;
+    border-radius: 7px;
 }
 .card{
     display: flex;
     border: 4px solid;
     background-color: black;
-    color: white;
     border-radius: 20px;
 }
 .list1 li:hover{
-    background-color: black;
-    color: white;
+    background-color:white;
+    color: black;
     
 }
 .list0{
@@ -124,7 +129,6 @@ h3{
     float: right;
 }
 .list0 a{
-    text-decoration: none;
     color: linen;
 }
 .skills-section {
@@ -133,9 +137,22 @@ h3{
   gap: 15px;
   justify-content: center;
   padding: 40px;
-  background-color: #f8f9fa;
+  /* background-color: #f8f9fa; */
 }
-
+.total-skill{
+    display: flex;
+    gap:25px;
+}
+.skill1{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.skill2{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
 .skill {
   background-color: #ffffff;
   padding: 12px 20px;
@@ -156,19 +173,32 @@ h3{
 .social-media{
     display: flex;
     flex-direction: column;
-    gap:20px;
+    gap: 12px;;
 }
 .platforms{
     display: flex;
     flex-direction: column;
-    gap:20px;
+    gap:12px;
 }
 .social-media a{
     color: grey;
-    text-decoration: none;
 }
 
 .platforms a{
     color: grey;
-    text-decoration: none;
+}
+
+.resume{
+    text-align: center;
+    font-size: 20px;
+    margin-top: 20px;
+}
+.resume a{
+    border: 1px solid grey;
+    padding: 5px;
+    color: rgb(211, 193, 193);
+    border-radius: 7px;
+}
+.resume a:hover{
+    font-weight: bold;
 }

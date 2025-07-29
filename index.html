@@ -3,6 +3,7 @@
 <head>
     <title>Koushik Portfolio</title>
     <link href="./styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
@@ -18,36 +19,45 @@
         </div>        
         <div class="head">
             <header>
-                <h1 id="kl">Hello, Glad to see you</h1>
+                <h1 id="kl">Hello, I am Koushik.</h1>
                 <h2>Welcome to my portfolio</h2>
-                <img class="welcome" src="./images/welcome.jpg" alt="welcome">
             </header>
         </div>
-        <div class="about">
-            <section id="about">
-                <h3>Know More About Me</h3>
-            <div class="image">
-                 <img class="self" src="./images/passport_photo.jpg" alt="my_photo">
-            </div>
-            <p>
-                Entry-level Computer Science graduate with practical experience in full-stack development using Java, Spring Boot, React, and SQL. Familiar with Python and foundational AI/ML concepts. Skilled in debugging, documentation, and collaborating in team and hybrid work environments. Quick learner with a strong problem-solving mindset and a passion for building scalable software solutions.
-            </p>
-            </section>
-         </div> 
+        <section id="about">
+            <div class="about">
+                <div class="ab">
+                    <h3 id="about-head">Know More About Me</h3>
+                    <p>
+                        Entry-level Computer Science graduate with practical experience in full-stack development using Java, Spring Boot, React, and SQL. Skilled in debugging, documentation, and collaborating in team and hybrid work environments. Quick learner with a strong problem-solving mindset and a passion for building scalable software solutions.
+                    </p>
+                </div>
+            </div> 
+         </section>
+         <div class="resume">
+            <a href="https://drive.google.com/file/d/1XA_B5Pc4evBxMdBTXLa9KrSPAxaY_nNP/view?usp=drive_link" target="_blank">Resume↗</a>
+         </div>
         
        
         <div class="skills-section"> 
             <section id="skill">
-            <h3>My Skills</h3>
+            <h3 id="skill-head">My Skills</h3>
+            <div class="total-skill">
+                <div class="skill1">
+                    <p class="springBoot skill">SpringBoot</p>
+                    <p class="python skill">Python</p>
+                    <p class="java skill">Java</p>                    
+                    <p class="git skill">Git</p>
+                    
+                </div>
+                <div class="skill2">
+                    <p class="html skill">HTML</p>
+                    <p class="react skill">React</p>
+                    <p class="sql skill">SQL</p>                    
+                    <p class="css skill">CSS</p>
+                    
+                </div>   
+            </div>
             
-                <div class="java skill">Java</div>
-                <div class="springBoot skill">SpringBoot</div>
-                <div class="git skill">Git</div>
-                <div class="python skill">Python</div>
-                <div class="sql skill">SQL</div>
-                <div class="html skill">HTML</div>
-                <div class="css skill">CSS</div>
-                <div class="react skill">React</div>
             
             </section>    
         </div>
@@ -56,8 +66,9 @@
             
                 <div class="p1 card">
                 <div class="left">
-                    <h2>Employee Management Website</h2>
-                    <a href="./projects.html">Details↗</a>
+                    <h2>2025</h2>
+                    <h1>Employee Management Website</h2>
+                    <a href="./project1.html" target="_blank">Details↗</a>
                 </div>
                 <div class="right">
                     <img src="./images/employee.png" alt="employee">
@@ -66,8 +77,8 @@
 
             <div class="p2 card">
                 <div class="left">
-                    <h2>Voice-Controlled Chess Game</h2>
-                    <a href="./projects.html">Details↗</a>
+                    <h1>Voice-Controlled Chess Game</h2>
+                    <a href="./project2.html" target="_blank">Details↗</a>
                 </div>
                 <div class="right">
                     <img src="./images/krish.png" alt="chess">
@@ -76,8 +87,8 @@
 
                 <div class="p2 card">
                     <div class="left">
-                        <h2>Quiz Competition Website</h2>
-                        <a href="./projects.html">Details↗</a>
+                        <h1>Quiz Competition Website</h2>
+                        <a href="./projects/project2.html" target="_blank">Details↗</a>
                     </div>
                     <div class="right">
                         <img src="./images/quiz.png" alt="quiz">
@@ -95,27 +106,38 @@
             <div class="contact">
             
                 <div class="query">
-                    <input type="text" placeholder="Enter your name"><br><br>
-                    <input type="email" placeholder="Enter your email"><br><br>
-                    <textarea id="message" placeholder="Enter Your Message"></textarea><br><br>
-                    <button type="submit">Send a Message</button>
+                    <form id="contact-form">
+                        <h3>Stay Connected</h3>
+                        <input type="text" placeholder="Enter your name"><br><br>
+                        <input type="email" placeholder="Enter your email"><br><br>
+                        <textarea id="message" placeholder="Enter Your Message"></textarea><br><br>
+                        <button type="submit">Send a Message</button>
+                    </form>
+                    
                 </div>
             
                 <div class="social-media">
-                    <a href="mail">Gmail</a>
-                    <a href="whatsapp">Whatsapp</a>
-                    <a href="phone">Phone</a>
+                    <h3>Contact Me</h3>
+                    <a id="gmail" href="#" onclick="copyEmail(event)">Gmail</a>
+                    <a href="https://wa.me/qr/CVCUGW6VTEMSD1" target="_blank">Whatsapp</a>
+                    <a id="phone" href="#" onclick="copyEmail(event)">Phone</a>
                 </div>
                 <div class="platforms">
-                    <a href="https://www.github.com/jkpardiv">Github</a>
-                    <a href="https://www.leetcode.com/u/jkpardiv">LeetCode</a>
+                    <h3>Other Profiles</h3>
+                    <a href="https://www.github.com/jkpardiv" target="_blank">Github</a>
+                    <a href="https://www.leetcode.com/u/jkpardiv" target="_blank">LeetCode</a>
                 </div>
             </div>
-        </section>
-            <!-- <h1>Get in touch</h1> -->
-            
+        </section>       
          
     </div>
-    
+    <script src="./index.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        (function(){
+                    emailjs.init("41iJosfbBVwRiciC0");
+        })();
+
+    </script>
 </body>
 </html>
