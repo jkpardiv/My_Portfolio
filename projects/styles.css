@@ -1,138 +1,143 @@
-body{
+/* === Base Styles (Desktop) === */
+body {
     font-family: 'Montserrat', Helvetica, sans-serif;
     background-color: black;
     color: white;
 }
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     line-height: 45px;
 }
-.head{
+
+.head {
     padding-top: 30px;
-}
-#abstract{
     display: flex;
     justify-content: center;
 }
 
-.abstract-list,
+#abstract {
+    display: flex;
+    justify-content: center;
+}
+
+#abstract-para,
 .tech-list,
+.abstract-list,
 .applications-list,
-.use-list,
-#abstract-para {
-  max-width: 800px;
-  margin: 0 auto;
-  border-bottom: 1.5px solid grey;
-  padding: 10px;
+.use-list {
+    max-width: 800px;
+    margin: 0 auto;
+    border-bottom: 1.5px solid grey;
+    padding: 10px;
 }
 
-h2 {
-  margin: 20px auto;
-  text-align: center;
-}
-.head{
-    display: flex;
-    justify-content: center;
-}
-
-.container{
+.container {
     display: grid;
 }
-header{
-    text-align: center;
 
+header {
+    text-align: center;
 }
-.abstract p{
+
+.abstract p {
     text-align: justify;
 }
-p{
+
+p {
     max-width: 800px;
     text-align: center;
     font-size: 18px;
     line-height: 1.8;
-    margin: 0 auto; 
+    margin: 0 auto;
     padding: 20px;
 }
 
-.abstract-list{
+.abstract-list,
+.tech-list {
     display: flex;
-    margin-left: 25%;
+    margin: 0 auto;
 }
 
-.tech-list{
-    display: flex;
-    margin-left: 25%;
+h2,
+.applications-list,
+.use-list {
+    margin: 20px auto;
+    text-align: center;
 }
 
-.code{
+.code {
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    color: beige
+    color: beige;
 }
 
-img{
+img {
     width: 30px;
     height: 30px;
     filter: invert(0%) sepia(100%) saturate(500%) hue-rotate(200deg);
 }
-.conclusion p{
+
+.conclusion p {
     text-align: justify;
 }
 
-/* MOBILE STYLES - screen width 768px and below */
+/* === Responsive Styles (Mobile/Tablet) === */
 @media (max-width: 768px) {
-  .abstract-list,
-  .tech-list,
-  .applications-list,
-  .use-list,
-  h2 {
-    margin-left: 10px;  /* Remove fixed 25% margin */
-    margin-right: 10px;
-    flex-direction: column;
-  }
+    .abstract-list,
+    .tech-list,
+    .applications-list,
+    .use-list,
+    h2,
+    .head {
+        margin-left: 10px;
+        margin-right: 10px;
+        flex-direction: column;
+        text-align: left;
+    }
 
-  p {
-    padding: 10px;
-    font-size: 16px;
-    text-align: left; /* Better readability */
-  }
+    p {
+        padding: 10px;
+        font-size: 16px;
+        text-align: left;
+    }
 
-  img {
-    width: 24px;
-    height: 24px;
-  }
+    img {
+        width: 24px;
+        height: 24px;
+    }
 
-  .head {
-    padding-top: 20px;
-    font-size: 22px;
-    flex-direction: column;
-  }
+    .head {
+        padding-top: 20px;
+        font-size: 22px;
+    }
 
-  .container {
-    grid-template-columns: 1fr; /* Stack elements vertically */
-  }
+    .container {
+        grid-template-columns: 1fr;
+    }
 
-  .code {
-    flex-wrap: wrap;
-    gap: 4px;
-  }
+    .code {
+        flex-wrap: wrap;
+        gap: 4px;
+    }
 
-  .abstract-list,
-  .tech-list {
-    flex-direction: column;
-    align-items: flex-start;
-  }
+    .abstract-list,
+    .tech-list {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 
-  #abstract-para,
-  .tech-list,
-  .abstract-list,
-  .applications-list,
-  .use-list {
-    border-bottom: 1px solid grey;
-    margin-left: 10px;
-    margin-right: 10px;
-  }
+    #abstract-para,
+    .tech-list,
+    .abstract-list,
+    .applications-list,
+    .use-list {
+        border-bottom: 1px solid grey;
+        margin-left: 10px;
+        margin-right: 10px;
+        padding: 10px;
+    }
 }
