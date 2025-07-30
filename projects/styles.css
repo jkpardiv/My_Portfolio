@@ -9,6 +9,9 @@ body{
     box-sizing: border-box;
     line-height: 45px;
 }
+.head{
+    padding-top: 30px;
+}
 #abstract{
     display: flex;
     justify-content: center;
