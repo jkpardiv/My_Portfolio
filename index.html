@@ -7,21 +7,30 @@
 </head>
 <body>
     <div class="container">
-        <div class="navigation">
-            <nav>
-            <ul class="list0">
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#skill">My Skills</a></li>
-                <li><a href="#Projects">My Projects</a></li>
-                <li><a href="#contact">Contact Me</a></li>
-            </ul>
-        </nav>
-        </div>        
+              
         <div class="head">
-            <header>
-                <h1 id="kl">Hello, I am Koushik.</h1>
-                <h2>Welcome to my portfolio</h2>
-            </header>
+            <div id="vanta-fog">
+                <div class="navigation">
+                    <nav>
+                        <ul class="list0">
+                            <li><a href="#about">About Me</a></li>
+                            <li><a href="#skill">My Skills</a></li>
+                            <li><a href="#Projects">My Projects</a></li>
+                            <li><a href="#contact">Contact Me</a></li>
+                        </ul>
+                    </nav>
+                </div>  
+                <div class="header-text">
+                    <div class="heading">
+                        <header>
+                            <h1 id="kl">Hello, I am Koushik.</h1>
+                            <h2>Welcome to my portfolio</h2>
+                        </header>
+                    </div>
+                    
+                </div>
+                
+            </div>
         </div>
         <section id="about">
             <div class="about">
@@ -62,13 +71,14 @@
             </section>    
         </div>
         <section id="Projects">
-            <div class="overview">
             
+            <div class="overview">
+                <h1>My Projects</h1>
                 <div class="p1 card">
                 <div class="left">
-                    <h2>2025</h2>
-                    <h1>Employee Management Website</h2>
-                    <a href="./project1.html" target="_blank">Details↗</a>
+                    <h1>Employee Management Website</h1>
+                    <h2>Self Made Project</h2>
+                    <a href="./projects/project1.html" target="_blank">Details↗</a>
                 </div>
                 <div class="right">
                     <img src="./images/employee.png" alt="employee">
@@ -77,18 +87,20 @@
 
             <div class="p2 card">
                 <div class="left">
-                    <h1>Voice-Controlled Chess Game</h2>
-                    <a href="./project2.html" target="_blank">Details↗</a>
+                    <h1>Offline Voice Note taking web application</h1>
+                    <h2>Team Work</h2>                    
+                    <a href="./projects/project2.html" target="_blank">Details↗</a>
                 </div>
                 <div class="right">
-                    <img src="./images/krish.png" alt="chess">
+                    <img src="./images/voice.png" alt="chess">
                 </div>
             </div>
 
                 <div class="p2 card">
                     <div class="left">
-                        <h1>Quiz Competition Website</h2>
-                        <a href="./projects/project2.html" target="_blank">Details↗</a>
+                        <h1>Quiz Competition Website</h1>
+                        <h2>Team Work</h2>                        
+                        <a href="./projects/project3.html" target="_blank">Details↗</a>
                     </div>
                     <div class="right">
                         <img src="./images/quiz.png" alt="quiz">
@@ -103,31 +115,38 @@
             <a href="./projects.html"><button type="submit" class="pro-button" >👉Check out My Projects Here</button></a>
         </div> -->
         <section id="contact">
-            <div class="contact">
+            <footer class="footer">
+                <div class="contact">
             
-                <div class="query">
-                    <form id="contact-form">
-                        <h3>Stay Connected</h3>
-                        <input type="text" placeholder="Enter your name"><br><br>
-                        <input type="email" placeholder="Enter your email"><br><br>
-                        <textarea id="message" placeholder="Enter Your Message"></textarea><br><br>
-                        <button type="submit">Send a Message</button>
-                    </form>
+                    <div class="query">
+                        <form id="contact-form">
+                            <h3>Stay Connected</h3>
+                            <input type="text" name="name" placeholder="Enter your name"><br><br>
+                            <input type="email" name= "email" placeholder="Enter your email"><br><br>
+                            <textarea id="message" name="message" placeholder="Enter Your Message"></textarea><br><br>
+                            <button type="submit">Send a Message</button>
+                        </form>
+                        
+                    </div>
+                    <div class="med">
+                        <h3>Contact Me</h3>
+                        <div class="social-media">
+                            <a id="gmail" href="#" onclick="copyEmail(event)">Gmail</a>
+                            <a href="https://wa.me/qr/CVCUGW6VTEMSD1" target="_blank">Whatsapp</a>
+                            <a id="phone" href="#" onclick="copyEmail(event)">Phone</a>
+                        </div>
+                    </div>
+                    <div class="plat">
+                        <h3>Other Profiles</h3>
+                        <div class="platforms">
+                            <a href="https://www.github.com/jkpardiv" target="_blank">Github</a>
+                            <a href="https://www.leetcode.com/u/jkpardiv" target="_blank">LeetCode</a>
+                    </div>
+                    </div>
                     
                 </div>
+            </footer>
             
-                <div class="social-media">
-                    <h3>Contact Me</h3>
-                    <a id="gmail" href="#" onclick="copyEmail(event)">Gmail</a>
-                    <a href="https://wa.me/qr/CVCUGW6VTEMSD1" target="_blank">Whatsapp</a>
-                    <a id="phone" href="#" onclick="copyEmail(event)">Phone</a>
-                </div>
-                <div class="platforms">
-                    <h3>Other Profiles</h3>
-                    <a href="https://www.github.com/jkpardiv" target="_blank">Github</a>
-                    <a href="https://www.leetcode.com/u/jkpardiv" target="_blank">LeetCode</a>
-                </div>
-            </div>
         </section>       
          
     </div>
@@ -139,5 +158,23 @@
         })();
 
     </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.fog.min.js"></script>
+    <script>
+        VANTA.FOG({
+            el: "#vanta-fog",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            highlightColor: 0x00ffff,
+            midtoneColor: 0x000000,
+            lowlightColor: 0x222222,
+            baseColor: 0x0a0a0a,
+            blurFactor: 0.5,
+            speed: 2.0,
+            zoom: 1.5
+        })
+    </script>
+
 </body>
 </html>

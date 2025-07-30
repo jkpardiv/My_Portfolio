@@ -2,25 +2,36 @@
 <html lang="en">
 <head>
     <title>Offline Voice</title>
+    <link href="./styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
-        <div class="abstract">
-            <p>
-                The Offline Speech-to-Text, Image-to-Text, and Text-to-Speech Web Application is designed to provide users with a comprehensive solution for converting spoken words and images into text, along with the ability to convert text back into speech, all without requiring an internet connection. This project integrates Vosk for speech recognition, Tesseract OCR for image text extraction, and a text-to-speech (TTS) engine, ensuring a seamless and interactive user experience. The system is built using a Flask-based backend with a web-based frontend developed using HTML, CSS, and JavaScript, enabling smooth and responsive user interaction.
+        <div class="head">
+             <header>
+                <h1>Offline Voice-Activated Note Takiing Application</h1>
+                <a href="https://github.com/jkpardiv/offline_voice" class="code" target="_blank"><img src="../images/image.png">Source Code</a>
+             </header>
+        </div> 
+        <div id="abstract">
+            <div id="abstract-para">
+                <p>
+                    The Offline Speech-to-Text, Image-to-Text, and Text-to-Speech Web Application is designed to provide users with a comprehensive solution for converting spoken words and images into text, along with the ability to convert text back into speech, all without requiring an internet connection. This project integrates Vosk for speech recognition, Tesseract OCR for image text extraction, and a text-to-speech (TTS) engine, ensuring a seamless and interactive user experience. The system is built using a Flask-based backend with a web-based frontend developed using HTML, CSS, and JavaScript, enabling smooth and responsive user interaction.
 
-                The application allows users to record speech through a microphone and transcribe it into text in real-time. Additionally, users can upload images containing text, which are processed using OCR to extract readable text. A newly integrated text-to-speech feature enables users to listen to transcribed or manually entered text, enhancing accessibility for visually impaired users or those who prefer auditory feedback. The extracted or converted text is displayed in a user-friendly interface, with options to save and download transcriptions for future use. The system ensures privacy by processing all data locally and automatically deleting temporary files after processing.
-
-                The design follows a modular architecture, consisting of the frontend user interface, backend processing engine, and AI-powered transcription models. The performance of the application is optimized for low-latency speech-to-text conversion, high-accuracy image text extraction, and smooth text-to-speech playback. Security measures are implemented to protect user data, and future enhancements include support for multiple languages, AI-based error correction, improved voice synthesis, and mobile application development.
-            </p>
+                    The application allows users to record speech through a microphone and transcribe it into text in real-time. Additionally, users can upload images containing text, which are processed using OCR to extract readable text. 
+                </p>   
+            </div>      
         </div>
         <div class="technologies">
             <h2> Key Technologies Used:</h2>
-            <ul class="tech-list">
-                <li>Backend and Core Processing: Python 3, Flask, Vosk, Tesseract OCR, pyttsx3, Pydub.</li>
-                <li>Frontend: HTML, CSS, JavaScript, HTML5 Audio API</li>
-                <li>Supporting Tools: Pillow (PIL)</li>
-            </ul>
+            <div class="tech-list">
+                <ul class="list2">
+                    <li>Backend and Core Processing: Python 3, Flask, Vosk, Tesseract OCR, pyttsx3, Pydub.</li>
+                    <li>Frontend: HTML, CSS, JavaScript, HTML5 Audio API</li>
+                    <li>Supporting Tools: Pillow (PIL)</li>
+                </ul>
+            </div>
+            
         </div>  
         <div class="applications">
             <h2>Applications:</h2>

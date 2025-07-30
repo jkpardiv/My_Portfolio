@@ -1,0 +1,72 @@
+body{
+    font-family: 'Montserrat', Helvetica, sans-serif;
+    background-color: black;
+    color: white;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 45px;
+}
+#abstract{
+    display: flex;
+    justify-content: center;
+}
+
+#abstract-para,.tech-list,.abstract-list,.applications-list,.use-list{
+    max-width: 800px;
+    border-bottom: 1.5px solid grey;
+}
+.head{
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    display: grid;
+}
+header{
+    text-align: center;
+
+}
+.abstract p{
+    text-align: justify;
+}
+p{
+    max-width: 800px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.8;
+    margin: 0 auto; 
+    padding: 20px;
+}
+
+.abstract-list{
+    display: flex;
+    margin-left: 25%;
+}
+
+.tech-list{
+    display: flex;
+    margin-left: 25%;
+}
+h2,.applications-list,.use-list{
+    margin-left: 25%;
+}
+.code{
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: beige
+}
+
+img{
+    width: 30px;
+    height: 30px;
+    filter: invert(0%) sepia(100%) saturate(500%) hue-rotate(200deg);
+}
+.conclusion p{
+    text-align: justify;
+}
+
