@@ -17,9 +17,20 @@ body{
     justify-content: center;
 }
 
-#abstract-para,.tech-list,.abstract-list,.applications-list,.use-list{
-    max-width: 800px;
-    border-bottom: 1.5px solid grey;
+.abstract-list,
+.tech-list,
+.applications-list,
+.use-list,
+#abstract-para {
+  max-width: 800px;
+  margin: 0 auto;
+  border-bottom: 1.5px solid grey;
+  padding: 10px;
+}
+
+h2 {
+  margin: 20px auto;
+  text-align: center;
 }
 .head{
     display: flex;
@@ -54,9 +65,7 @@ p{
     display: flex;
     margin-left: 25%;
 }
-h2,.applications-list,.use-list{
-    margin-left: 25%;
-}
+
 .code{
     display: inline-flex;
     align-items: center;
@@ -73,3 +82,57 @@ img{
     text-align: justify;
 }
 
+/* MOBILE STYLES - screen width 768px and below */
+@media (max-width: 768px) {
+  .abstract-list,
+  .tech-list,
+  .applications-list,
+  .use-list,
+  h2 {
+    margin-left: 10px;  /* Remove fixed 25% margin */
+    margin-right: 10px;
+    flex-direction: column;
+  }
+
+  p {
+    padding: 10px;
+    font-size: 16px;
+    text-align: left; /* Better readability */
+  }
+
+  img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .head {
+    padding-top: 20px;
+    font-size: 22px;
+    flex-direction: column;
+  }
+
+  .container {
+    grid-template-columns: 1fr; /* Stack elements vertically */
+  }
+
+  .code {
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+
+  .abstract-list,
+  .tech-list {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #abstract-para,
+  .tech-list,
+  .abstract-list,
+  .applications-list,
+  .use-list {
+    border-bottom: 1px solid grey;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
